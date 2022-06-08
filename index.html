@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap">
+    <title>Bendito Fut</title>
+</head>
+<body>
+    
+    <header>
+        <section class="container principal">
+            <div class="cabecalho__principal--imagem">
+                <div class="container">
+                    <input type="checkbox" id="checkbox-menu">
+                    <label class="menu__hamburguer" for="checkbox-menu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </label>
+                    <ul class="lista-menu">
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">HOME</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">MODALIDADES</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">QUEM SOMOS</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">CADASTRE SUA QUADRA</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">FESTAS E EVENTOS</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./Assets/logo-header.png" alt="Logo Bendito Fut" class="cabecalho__imagem">
+                <a href="#" class="lista-menu__header">LOGIN</a>
+                <ul class="lista-menu-alternativo">
+                    <li>
+                        <a href="#" class="lista-menu__link" >HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lista-menu__link">QUEM SOMOS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lista-menu__link">CADASTRE SUA QUADRA</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lista-menu__link">FESTAS E EVENTOS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="lista-menu__link">CONTATO</a>
+                    </li>
+                    <li class="container__login">
+                        <img src="./Assets/icons8-login-16.png" alt="Ícone Login" class="img__login">
+                        <a href="#" class="lista-menu__link">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        
+        <section class="container secundario">
+            <div class="titulo__principal">
+                <h1 class="titulo__item">Campo</h1>
+                <img src="./Assets/icon-ball.png" alt="Ícone bola de futebol">
+                <h1 class="titulo__item">Society</h1>
+                <img src="./Assets/icon-ball.png" alt="Ícone bola de futebol">
+                <h1 class="titulo__item">Futsal</h1>
+            </div>
+        </section>
+        <section>
+            <div class="titulo__secundario">
+                <p class="paragrafo__principal">AQUI VOCÊ ESCOLHE QUALQUER MODALIDADE</p>
+                <form>
+                    <fieldset>
+                        <legend class="titulo__radio">PESQUISAR POR:</legend>
+                        <label class="titulo__radio--dois" for="radio-cep">CEP</label>
+                        <input type="radio" name="busca" value="cep" id="radio-cep" checked>
+                        
+                        <label class="titulo__radio--dois" for="radio-regiao">REGIÃO</label>
+                        <input type="radio" name="busca" value="regiao" id="radio-regiao">
+                    </fieldset>
+                    
+                    <div class="form__cep">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" class="input-padrao" required placeholder="Digite aqui o seu CEP">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    </div>
+                    <fieldset id="modalidades">
+                        <legend id="titulo__modalidades">Todas as modalidades</legend>
+                        <select class="input-select">
+                            <option class="option">Selecione...</option>
+                            <option class="option">Futebol de Campo</option>
+                            <option class="option">Society</option>
+                            <option class="option">Futsal</option>
+                        </select>
+                    </fieldset>
+
+                    <label class="checkbox2"><input type="checkbox">Quer receber nossas novidades por email?</label>
+                    
+                    <input type="submit" value="BUSCAR QUADRAS E CAMPOS" class="buscar">
+                                       
+                 </form>                       
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container footer">
+            <div class="rodape__principal">
+                <p class="rodape">Copyright © 2022 - Bendito Fut | O maior buscador de quadras e campos</p>
+                <p class="rodape-dois">Desenvolvido por Thiago Gonçalves</p>
+            </div>
+            <div class="container__img--footer">
+                <img src="./Assets/icon-insta.png" alt="Ícone do Instagram" class="img__footer">
+                <img src="./Assets/icon-facebook.png" alt="Ícone do Facebook" class="img__footer">
+                <img src="./Assets/icon-wpp.png" alt="Ícone do WhatsApp" class="img__footer">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

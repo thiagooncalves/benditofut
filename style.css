@@ -1,0 +1,1476 @@
+:root {
+    --cor-header: #092c0b;
+    --cor-body: #0b5d11;
+    --cor-branco: #fbfbfb;
+    --cor-body-secundario: #dedede;
+    --fonte-principal: "Exo"
+}
+
+/* resolução mobile Iphone X - W375 x H812 */
+
+body {
+    background-color: var(--cor-body);
+    font-family: var(--fonte-principal);
+}
+
+  main {
+    font-family: var(--fonte-principal);
+  }
+
+  .secundario {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .titulo__principal {
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin: 1rem;
+  }
+
+  .titulo__item {
+      font-size: 20px;
+  }
+
+  .titulo__secundario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .paragrafo__principal {
+      color: #FFFFFF;
+      font-size: 16px;
+      margin: 1rem;
+  }
+
+  .titulo__radio {
+      margin: 1rem 0 1rem 0;
+      color: #FFFFFF;
+  }
+
+  fieldset {
+      color: #FFFFFF;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+  }
+
+  #radio-cep {
+      margin-right: 1rem;
+      margin-bottom: .8rem;
+  }
+
+  #radio-regiao {
+      margin-left: 2rem;
+      margin-bottom: .8rem;
+  }
+
+label {
+    color: #FFFFFF;
+}
+
+#cep {
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: .5rem;
+}
+
+#email {
+    width: 70%;
+    font-size: 16px;
+}
+
+.input-padrao {
+    height: 30px;
+}
+
+.input-select {
+    height: 40px;
+    font-size: 16px;
+    width: 50%;
+    margin-top: .5rem;
+}
+
+.option {
+    font-size: 14px;
+}
+
+.form__cep {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4.4rem;
+    margin-top: 1rem;
+    font-size: 18px;
+    gap: .2rem;
+}
+
+#modalidades {
+    margin-top: 1rem;
+}
+
+#titulo__modalidades {
+    font-size: 18px;
+}
+
+.checkbox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 18px;
+    height: 18px;
+}
+
+.buscar {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    font-size: 16px;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    font-weight: bold;
+    width: 85%;
+    height: 58px;
+    border: #000000 solid 4px;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--cor-header);
+    font-family: var(--fonte-principal);
+    margin-top: 143px;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+}
+
+.rodape {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.rodape-dois {
+    margin-top: 1rem;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+}
+
+.img__footer {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    }
+
+.container__img--footer {
+    margin-left: 0rem;
+}
+
+
+@media screen and (max-width: 320px) {
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        margin-left: 10.4rem;
+        width: 15rem;
+    }
+    
+    #checkbox-menu:checked ~ .lista-menu {
+        display: block;
+    }
+    
+    .lista-menu__item {
+        padding: 1rem;
+        background-color: #FFFFFF;
+        color: #092c0b;
+        font-weight: bold;
+    }
+    
+    .lista-menu__link {
+        text-decoration: none;
+        color: #0b5d11;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    
+    .checkbox2 {
+        font-size: 14px;
+    }
+    #cep {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    #email {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    .titulo__item {
+        font-size: 16px;
+    }
+
+    .cabecalho__link {
+        font-size: 14px;
+    }
+
+    label {
+        width: 20px;
+    }
+    
+    .input-padrao {
+        height: 25px;
+    }
+
+    .form__cep {
+        margin-left: 60px;
+        font-size: 14px;
+    }
+
+    #radio-cep {
+        margin-left: .8rem;
+        margin-bottom: .8rem;
+    }
+  
+    #radio-regiao {
+        margin-left: 2.5rem;
+        margin-bottom: .8rem;
+    }
+
+    .buscar {
+        font-size: 10px;
+        width: 180px;
+        height: 40px;
+        margin-left: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .paragrafo__principal {
+        font-size: 14px;
+    }
+
+    .titulo__radio {
+        font-size: 14px;
+    }
+
+    .input-select {
+    height: 30px;
+    font-size: 12px;
+    width: 150px;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 14px;
+    }
+
+    input {
+        width: 15px;
+        height: 15px;
+    }
+
+    .rodape {
+        font-size: 12px;
+    }
+    
+    .rodape-dois {
+        font-size: 12px;
+    }
+
+    footer {
+        display: flex;
+        height: 5rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 15px;
+        height: 15px;
+        margin-right: 1rem;
+        }
+
+    .container__img--footer {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .checkbox2 {
+        font-size: 16px;
+    }
+    #cep {
+        width: 90%;
+        font-size: .8rem;
+    }
+
+    #email {
+        width: 90%;
+        font-size: .8rem;
+    }
+
+    .titulo__item {
+        font-size: 20px;
+    }
+
+    .cabecalho__link {
+        font-size: 16px;
+    }
+
+    label {
+        width: 25px;
+    }
+    
+    .input-padrao {
+        height: 30px;
+        
+    }
+
+    .form__cep {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    #radio-cep {
+        margin-left: 1rem;
+        margin-bottom: .6rem;
+        width: 18px;
+        height: 18px;
+    }
+  
+    #radio-regiao {
+        margin-left: 2.9rem;
+        margin-bottom: .6rem;
+        width: 18px;
+        height: 18px;
+    }
+
+    .buscar {
+        font-size: .8rem;
+        width: 17rem;
+        height: 3.5rem;
+        margin-left: 2.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .paragrafo__principal {
+        font-size: 18px;
+    }
+
+    .titulo__radio {
+        font-size: 18px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 18px;
+    }
+
+    .input-select {
+    height: 30px;
+    font-size: 14px;
+    width: 230px;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 18px;
+    }
+
+    input {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 13px;
+    }
+    
+    .rodape-dois {
+        font-size: 13px;
+        text-align: start;
+    }
+
+    footer {
+        display: flex;
+        height: 5rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 20px;
+        height: 20px;
+        margin-right: .5rem;
+        }
+
+    .container__img--footer {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .checkbox2 {
+        font-size: 16px;
+    }
+    #cep {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #email {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .titulo__item {
+        font-size: 20px;
+    }
+
+    .cabecalho__link {
+        font-size: 16px;
+    }
+
+    label {
+        width: 25px;
+    }
+    
+    .input-padrao {
+        height: 30px;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form__cep {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    #radio-cep {
+        margin-left: 1rem;
+        margin-bottom: .6rem;
+        width: 18px;
+        height: 18px;
+    }
+  
+    #radio-regiao {
+        margin-left: 2.9rem;
+        margin-bottom: .6rem;
+        width: 18px;
+        height: 18px;
+    }
+
+    .buscar {
+        font-size: .8rem;
+        width: 17rem;
+        height: 3.5rem;
+        margin-left: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .paragrafo__principal {
+        font-size: 18px;
+    }
+
+    .titulo__radio {
+        font-size: 18px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 18px;
+    }
+
+    .input-select {
+    height: 30px;
+    font-size: 14px;
+    width: 230px;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 18px;
+    }
+
+    input {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 13px;
+    }
+    
+    .rodape-dois {
+        font-size: 13px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__principal--imagem {
+        display: flex;
+        align-items: center;
+    }
+    
+    .checkbox2 {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .titulo__item {
+        font-size: 24px;
+    }
+
+    .cabecalho__link {
+        font-size: 20px;
+    }
+
+    label {
+        width: 25px;
+    }
+    
+    .input-padrao {
+        height: 2.2rem;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .form__cep {
+        margin-left: 1.5rem;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    #radio-cep {
+        margin-left: 1rem;
+        margin-bottom: .6rem;
+        width: 18px;
+        height: 18px;
+    }
+  
+    #radio-regiao {
+        margin-left: 3.1rem;
+        margin-bottom: .6rem;
+        width: 18px;
+        height: 18px;
+    }
+
+    .buscar {
+        font-size: 14px;
+        width: 250px;
+        height: 55px;
+        margin-left: 4.2rem;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .paragrafo__principal {
+        font-size: 20px;
+        margin: 50px 0 25px;
+    }
+
+    .titulo__radio {
+        font-size: 20px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 20px;
+    }
+
+    .input-select {
+    height: 2.5rem;
+    font-size: 16px;
+    width: 15rem;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 20px;
+    }
+
+    input {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 15px;
+    }
+    
+    .rodape-dois {
+        font-size: 15px;
+        text-align: start;
+    }
+
+    footer {
+        display: flex;
+        height: 7rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 26px;
+        height: 26px;
+        margin-right: 1rem;
+        }
+
+    .container__img--footer {
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .checkbox2 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .titulo__item {
+        font-size: 26px;
+    }
+
+    .cabecalho__link {
+        font-size: 22px;
+    }
+
+    label {
+        width: 25px;
+    }
+    
+    .input-padrao {
+        height: 40px;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .form__cep {
+        margin-left: 2rem;
+        margin-top: 25px;
+        font-size: 22px;
+        gap: .5rem;
+    }
+
+    #radio-cep {
+        margin-left: 1.2rem;
+        margin-bottom: .4rem;
+        width: 22px;
+        height: 22px;
+    }
+  
+    #radio-regiao {
+        margin-left: 3.5rem;
+        margin-bottom: .4rem;
+        width: 22px;
+        height: 22px;
+    }
+
+    .buscar {
+        font-size: 16px;
+        width: 300px;
+        height: 70px;
+        margin-left: 4rem;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .paragrafo__principal {
+        font-size: 22px;
+        margin: 50px 0 25px;
+    }
+
+    .titulo__radio {
+        font-size: 22px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 22px;
+    }
+
+    .input-select {
+    height: 40px;
+    font-size: 18px;
+    width: 250px;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 22px;
+    }
+
+    input {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 17px;
+    }
+    
+    .rodape-dois {
+        font-size: 17px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .cabecalho__principal--imagem {
+        height: 10rem;
+    }
+
+    .titulo__principal {
+        margin-top: 2rem;
+    }
+
+    .cabecalho__imagem {
+        width: 20rem;
+        height: 14rem;
+    }
+    
+    .checkbox2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .titulo__item {
+        font-size: 28px;
+    }
+
+    .cabecalho__link {
+        font-size: 30px;
+    }
+
+    label {
+        width: 2rem;
+    }
+    
+    .input-padrao {
+        height: 2.5rem;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .form__cep {
+        margin-left: 0;
+        margin-top: 50px;
+        font-size: 22px;
+        gap: .5rem;
+    }
+
+    #radio-cep {
+        margin-left: 1.8rem;
+        margin-bottom: .2rem;
+        width: 28px;
+        height: 28px;
+    }
+  
+    #radio-regiao {
+        margin-left: 4.5rem;
+        margin-bottom: .2rem;
+        width: 28px;
+        height: 28px;
+    }
+
+    .buscar {
+        font-size: 18px;
+        width: 22rem;
+        height: 4rem;
+        margin-left: 2.3rem;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .paragrafo__principal {
+        font-size: 22px;
+        margin: 50px 0 25px;
+    }
+
+    .titulo__radio {
+        font-size: 22px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 22px;
+    }
+
+    .input-select {
+    height: 2.8rem;
+    font-size: 18px;
+    width: 20rem;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 22px;
+    }
+
+    input {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 16px;
+    }
+    
+    .rodape-dois {
+        font-size: 16px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho__principal--imagem {
+        height: 12rem;
+    }
+
+    .titulo__principal {
+        margin-top: 2rem;
+    }
+
+    .cabecalho__imagem {
+        width: 22rem;
+        height: 14rem;
+    }
+    
+    .checkbox2 {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .titulo__item {
+        font-size: 34px;
+    }
+
+    label {
+        width: 2.5rem;
+    }
+    
+    .input-padrao {
+        height: 3.5rem;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 1.6rem;
+        width: 90%;
+    }
+
+    .form__cep {
+        margin-left: 2rem;
+        margin-top: 50px;
+        font-size: 26px;
+        gap: 1rem;
+    }
+
+    #radio-cep {
+        margin-left: 1.8rem;
+        margin-bottom: .1rem;
+        width: 30px;
+        height: 30px;
+    }
+  
+    #radio-regiao {
+        margin-left: 4.5rem;
+        margin-bottom: .1rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .buscar {
+        font-size: 20px;
+        width: 25rem;
+        height: 5rem;
+        margin-left: 4.5rem;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .paragrafo__principal {
+        font-size: 26px;
+        margin: 50px 0 25px;
+    }
+
+    .titulo__radio {
+        font-size: 26px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 26px;
+    }
+
+    .input-select {
+    height: 3.5rem;
+    font-size: 22px;
+    width: 24rem;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 26px;
+    }
+
+    input {
+        width: 27px;
+        height: 27px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 20px;
+    }
+    
+    .rodape-dois {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    footer {
+        display: flex;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+        }
+
+    .container__img--footer {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .titulo__principal {
+        margin-top: 2rem;
+    }
+    
+    .checkbox2 {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    .titulo__item {
+        font-size: 38px;
+    }
+
+    .cabecalho__link {
+        font-size: 30px;
+    }
+
+    label {
+        width: 2.5rem;
+    }
+    
+    .input-padrao {
+        height: 4rem;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 1.6rem;
+        width: 90%;
+    }
+
+    .form__cep {
+        margin-left: 2rem;
+        margin-top: 50px;
+        font-size: 30px;
+        gap: 1rem;
+    }
+
+    #radio-cep {
+        margin-left: 1.8rem;
+        margin-bottom: -.2rem;
+        width: 30px;
+        height: 30px;
+    }
+  
+    #radio-regiao {
+        margin-left: 5rem;
+        margin-bottom: -.2rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .buscar {
+        font-size: 20px;
+        width: 25rem;
+        height: 5rem;
+        margin-left: 4.5rem;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .paragrafo__principal {
+        font-size: 30px;
+        margin: 50px 0 25px;
+    }
+
+    .titulo__radio {
+        font-size: 30px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 30px;
+    }
+
+    .input-select {
+    height: 4rem;
+    font-size: 22px;
+    width: 25rem;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 30px;
+    }
+
+    input {
+        width: 27px;
+        height: 27px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 20px;
+    }
+    
+    .rodape-dois {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    footer {
+        display: flex;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+        }
+
+    .container__img--footer {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .cabecalho__principal--imagem {
+        height: 12rem;
+    }
+
+    .titulo__principal {
+        margin-top: 2rem;
+    }
+
+    .cabecalho__imagem {
+        width: 20rem;
+        height: 14rem;
+    }
+    
+    .checkbox2 {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 26px;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 26px;
+    }
+
+    .titulo__item {
+        font-size: 44px;
+    }
+
+    .cabecalho__link {
+        font-size: 36px;
+    }
+    
+    .input-padrao {
+        height: 4rem;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 1.6rem;
+        width: 90%;
+    }
+
+    .form__cep {
+        margin-left: 3rem;
+        margin-top: 50px;
+        font-size: 34px;
+        gap: 1rem;
+    }
+
+    #radio-cep {
+        margin-left: 2rem;
+        margin-bottom: -.3rem;
+        width: 30px;
+        height: 30px;
+    }
+  
+    #radio-regiao {
+        margin-left: 5.5rem;
+        margin-bottom: -.3rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .buscar {
+        font-size: 24px;
+        width: 30rem;
+        height: 6rem;
+        margin-left: 4.5rem;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .paragrafo__principal {
+        font-size: 34px;
+        margin: 50px 0 50px;
+    }
+
+    .titulo__radio {
+        font-size: 34px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 34px;
+    }
+
+    .input-select {
+    height: 4rem;
+    font-size: 26px;
+    width: 25rem;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 34px;
+    }
+
+    input {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 22px;
+    }
+    
+    .rodape-dois {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    footer {
+        display: flex;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 38px;
+        height: 38px;
+        margin-right: 1rem;
+        }
+
+    .container__img--footer {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .cabecalho__principal--imagem {
+        height: 15rem;
+    }
+
+    .titulo__principal {
+        margin-top: 4rem;
+    }
+
+    .cabecalho__imagem {
+        width: 22rem;
+        height: 16rem;
+    }
+    
+    .checkbox2 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    #cep {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    #email {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    .titulo__item {
+        font-size: 50px;
+    }
+
+    .cabecalho__link {
+        font-size: 38px;
+    }
+
+    label {
+        width: 2.5rem;
+    }
+    
+    .input-padrao {
+        height: 4rem;
+    }
+
+    #modalidades {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 1.6rem;
+        width: 90%;
+    }
+
+    .form__cep {
+        margin-left: 3rem;
+        margin-top: 50px;
+        font-size: 38px;
+        gap: 2rem;
+    }
+
+    #radio-cep {
+        margin-left: 2.3rem;
+        margin-bottom: -.6rem;
+        width: 36px;
+        height: 36px;
+    }
+  
+    #radio-regiao {
+        margin-left: 6.3rem;
+        margin-bottom: -.6rem;
+        width: 36px;
+        height: 36px;
+    }
+
+    .buscar {
+        font-size: 26px;
+        width: 32rem;
+        height: 6.3rem;
+        margin-left: 5rem;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+    .paragrafo__principal {
+        font-size: 38px;
+        margin: 50px 0 50px;
+    }
+
+    .titulo__radio {
+        font-size: 38px;
+        margin: 25px 0 25px -7px;
+    }
+
+    .titulo__radio--dois {
+        font-size: 38px;
+    }
+
+    .input-select {
+    height: 5rem;
+    font-size: 1.8rem;
+    width: 30rem;
+    margin-top: .5rem;
+    }
+
+    #titulo__modalidades {
+        font-size: 38px;
+    }
+
+    input {
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+    }
+
+    .rodape {
+        font-size: 26px;
+    }
+    
+    .rodape-dois {
+        font-size: 26px;
+        text-align: start;
+    }
+
+    footer {
+        display: flex;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .img__footer {
+        width: 42px;
+        height: 42px;
+        margin-right: 1rem;
+        }
+
+    .container__img--footer {
+        margin-left: 15rem;
+    }
+}
